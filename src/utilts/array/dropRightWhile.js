@@ -1,7 +1,7 @@
 /*
   dropRightWhile:创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)
-  @parmas {Array} 要查询的数组
-  @parmas {Function} 这个函数会在每一次迭代调用
+  @params {Array} 要查询的数组
+  @params {Function} 这个函数会在每一次迭代调用
 */
 
 /*
