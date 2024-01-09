@@ -1,6 +1,6 @@
 /*
   camelCase: 将字符串改为驼峰写法
-  @parmas {string} 要改写的字符串
+  @params {string} 要改写的字符串
 */
 
 function camelCase(str){
