@@ -1,6 +1,6 @@
 /*
   escape:转义string中的 "&", "<", ">", '"', "'", 和 "`" 字符为HTML实体字符
-  @parmas {String} 转义的字符串
+  @params {String} 转义的字符串
 */
 
 const htmlCode = {
