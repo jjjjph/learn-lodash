@@ -1,6 +1,6 @@
 /*
   lowerFirst: 转换字符串string的首字母为小写
-  @parmas {string} 要改写的字符串
+  @params {string} 要改写的字符串
 */
 
 function lowerFirst(str){
