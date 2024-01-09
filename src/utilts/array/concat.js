@@ -1,6 +1,6 @@
 /*
   concat: 将array与任何数组或值连接起来，返回一个新数组
-  @parmas {Array} 被连接的数组
+  @params {Array} 被连接的数组
   @params {*} 连接的值
 */
 
