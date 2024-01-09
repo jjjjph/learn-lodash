@@ -1,6 +1,6 @@
 /*
   create:创建一个继承 prototype 的对象。 如果提供了 prototype，它的可枚举属性会被分配到创建的对象上。
-  @parmas {Object} 要继承的对象
+  @params {Object} 要继承的对象
   @params {Object} 待分配的属性
 */
 
