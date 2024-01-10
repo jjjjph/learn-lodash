@@ -1,8 +1,8 @@
 /*
   endsWith: 检查字符串string是否以给定的target字符串结尾，返回true/false
-  @parmas {String} 被检查的字符串
-  @parmas {String} 要检索的字符串
-  @parmas {Number} 检索的位置
+  @params {String} 被检查的字符串
+  @params {String} 要检索的字符串
+  @params {Number} 检索的位置
 */
 
 function endsWith(str, target, position = "") {

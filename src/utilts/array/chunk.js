@@ -1,7 +1,7 @@
 /*
   chunk:把数组拆分成指定长度的区块，并将这些区块组成一个新的数组，如果不能等分，则剩余的元素组成一个区块
-  @parmas {Array} array 需要拆分的数组
-  @parmas {Number} size 需要拆分的长度
+  @params {Array} array 需要拆分的数组
+  @params {Number} size 需要拆分的长度
 */
 
 function chunk(array,size){

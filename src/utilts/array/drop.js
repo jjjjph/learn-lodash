@@ -1,7 +1,7 @@
 /*
   drop:创建一个切片数组，去除array前面的n个元素。（n默认值为1。）
-  @parmas {Array} 要切片的数组
-  @parmas {Number} 要取出的元素个数
+  @params {Array} 要切片的数组
+  @params {Number} 要取出的元素个数
 */
 
 function drop(arr, num) {

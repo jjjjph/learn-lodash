@@ -1,6 +1,6 @@
 /*
   defaultsDeep:类似defaults，除了它会递归分配默认属性
-  @parmas {Object} 目标对象
+  @params {Object} 目标对象
   @params {Object} 来源对象
 */
 

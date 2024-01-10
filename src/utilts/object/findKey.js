@@ -1,7 +1,7 @@
 /*
   findKey:这个方法类似find 。 除了它返回最先被 predicate 判断为真值的元素 key，而不是元素本身
-  @parmas {Object} 需要检索的对象
-  @parmas {*} 每次迭代时调用的函数
+  @params {Object} 需要检索的对象
+  @params {*} 每次迭代时调用的函数
 */
 
 function findKey(obj, predicate) {

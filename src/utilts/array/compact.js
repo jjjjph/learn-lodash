@@ -1,6 +1,6 @@
 /*
   compact:返回原数组中所有非假值元素组成的新数组。
-  @parmas {Array} 需要处理的数组
+  @params {Array} 需要处理的数组
 */
 
 function compact(array){

@@ -1,7 +1,7 @@
 /*
   assignIn：跟assign类似，但它会便利并继承来源对象的属性
-  @parmas {Object} 目标对象
-  @parmas {Object} 来源对象
+  @params {Object} 目标对象
+  @params {Object} 来源对象
 */
 
 function assign(object,...agrs){

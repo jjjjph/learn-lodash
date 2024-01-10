@@ -1,7 +1,7 @@
 /*
   assign：分配来源对象的可枚举属性到目标对象上，来源对象的应用规则是从左到右的，随后的下一个对象会覆盖上一个对象的属性
-  @parmas {Object} 目标对象
-  @parmas {Object} 来源对象
+  @params {Object} 目标对象
+  @params {Object} 来源对象
 */
 
 function assign(object,...args){

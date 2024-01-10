@@ -1,8 +1,8 @@
 /*
   difference: 创建一个具有唯一值的数组，每个值不包含在其他给定的数组中，返回一个新数组
-  @parmas {Array} 要检查的数组
-  @parmas {Array} 排除的值
-  @parmas {Array|Function|Object|string} iteratee 调用每个元素
+  @params {Array} 要检查的数组
+  @params {Array} 排除的值
+  @params {Array|Function|Object|string} iteratee 调用每个元素
 */
 
 function differenceBy(array, ...args) {

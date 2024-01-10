@@ -1,6 +1,6 @@
 /*
   deburr: 转换字符串string中拉丁语-1补充字母 和拉丁语扩展字母-A 为基本的拉丁字母，并且去除组合变音标记
-  @parmas {string} 要改写的字符串
+  @params {string} 要改写的字符串
 */
 
 function deburr(str) {

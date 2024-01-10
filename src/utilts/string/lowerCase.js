@@ -1,6 +1,6 @@
 /*
   lowerCase: 转换字符串string以空格分开单词，并转换为小写
-  @parmas {string} 要改写的字符串
+  @params {string} 要改写的字符串
 */
 
 function lowerCase(str){

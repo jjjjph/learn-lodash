@@ -1,6 +1,6 @@
 /*
   capitalize: 传入的字符串首字母大写，剩下的小写
-  @parmas {string} 要大写开头的字符串
+  @params {string} 要大写开头的字符串
 */
 
 function capitalize(str){
