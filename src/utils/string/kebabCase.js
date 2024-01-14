@@ -3,25 +3,31 @@
   @params {string} 要改写的字符串
 */
 
-function kebabCase(str){
-  if(!str){
-    return ''
+function kebabCase(str) {
+  if (!str) {
+    return "";
   }
-  const newstr=str.replace(/[A-Z]/,(chart)=>`-${chart.toLowerCase()}`)
-  const words=newstr.split(/[-_\s]+/).filter(item=>{
-    if(item){
-      return item
+  const reg = /[-_]+/;
+  let newstr;
+  if (reg.test(str)) {
+    newstr = str.replace(/[A-Z]/, (chart) => `-${chart.toLowerCase()}`);
+  } else {
+    newstr = str.replace(/[A-Z]/g, (chart) => `-${chart.toLowerCase()}`);
+  }
+  const words = newstr.split(/[-_\s]+/).filter((item) => {
+    if (item) {
+      return item;
     }
-  })  //将字符串分割成单词数组
+  }); //将字符串分割成单词数组
 
-  const camelCaseString=words.map(str=>str.toLowerCase()).join("-")
+  const camelCaseString = words.map((str) => str.toLowerCase()).join("-");
 
-  return camelCaseString
+  return camelCaseString;
 }
 
 // \s空白字符
 //toLowerCase()小写
 
 //示例
-let res=kebabCase('__FOO_BAR__')
+let res = kebabCase("--Gdjs-Jhds-tgg");
 console.log(res);
