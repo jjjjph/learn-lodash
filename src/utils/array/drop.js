@@ -14,10 +14,11 @@ function drop(arr, num) {
     num = length;
   }
 
-  const result = arr.splice(num, length);
+  // const result = arr.splice(num, length);
+  const result =arr.slice(num,length)
   return result;
 }
 
 //示例
 let res = drop([1, 2, 3]);
-console.log(res);
+console.log(res); //[2,3]

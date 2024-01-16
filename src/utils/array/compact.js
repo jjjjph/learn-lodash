@@ -19,4 +19,4 @@ function compact(array){
 //示例
 let arr=[0,1,'jj',null,'hello',9,7,'',false,undefined]
 let res=compact(arr)
-console.log(res);
+console.log(res); //[ 1, 'jj', 'hello', 9, 7 ]

@@ -12,4 +12,4 @@ function difference(array,...args){
 //示例
 let arr=[1,2,3]
 let res=difference(arr,1,2,4)
-console.log(res);
+console.log(res); //[3]

@@ -1,5 +1,5 @@
 /*
-  difference: 创建一个具有唯一值的数组，每个值不包含在其他给定的数组中，返回一个新数组
+  differenceBy: 类似difference，区别在于接受一个itera
   @params {Array} 要检查的数组
   @params {Array} 排除的值
   @params {Array|Function|Object|string} iteratee 调用每个元素
@@ -22,4 +22,4 @@ function differenceBy(array, ...args) {
 //示例
 // let res = differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], "x");
 let res = differenceBy([3.1, 2.2, 1.3], [4.4, 2.5], Math.floor);
-console.log(res);
+console.log(res); //[ 3.1, 1.3 ]

@@ -19,4 +19,4 @@ function concat(array,...args){
 //示例
 let arr=[1]
 let res=concat(arr,'ss',[4,5],[[6]],[[[9]]])
-console.log(res);
+console.log(res); //[ 1, 'ss', 4, 5, [ 6 ], [ [ 9 ] ] ]

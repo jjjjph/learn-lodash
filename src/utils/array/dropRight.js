@@ -1,10 +1,10 @@
 /*
-  drop:创建一个切片数组，去除array尾部的n个元素。（n默认值为1。）
+  dropRight:创建一个切片数组，去除array尾部的n个元素。（n默认值为1。）
   @params {Array} 要切片的数组
   @params {Number} 要取出的元素个数
 */
 
-function drop(arr, num) {
+function dropRight(arr, num) {
   const length = arr.length;
   if (!length) {
     return [];
@@ -19,5 +19,5 @@ function drop(arr, num) {
 }
 
 //示例
-let res = drop([1, 2, 3], 1);
+let res = dropRight([1, 2, 3], 1);
 console.log(res);

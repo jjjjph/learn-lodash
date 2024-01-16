@@ -1,5 +1,5 @@
 /*
-  intersection:创建唯一值的数组
+  intersection:创建唯一值的数组,可以理解为给定数组的交集
   @params {...Array} 待检查的数组
 */
 
@@ -16,4 +16,4 @@ function intersection(...args){
 
 //示例
 let res=intersection([2, 1], [4, 2], [1, 2])
-console.log(res);
+console.log(res); //[2]
