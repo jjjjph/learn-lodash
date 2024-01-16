@@ -5,6 +5,8 @@
   @params {Number} 开始查找的位置
 */
 
+//lastIndexOf:从右往左开始找
+
 function indexOf(arr, value, index = 0) {
   const length = arr.length;
   const start = index >= 0 ? index : Math.max(length + index, 0);
@@ -13,9 +15,26 @@ function indexOf(arr, value, index = 0) {
       return i;
     }
   }
-  return -1
+  return -1;
 }
 
 //示例
-let res = indexOf([1, 2, 3], 4);
-console.log(res);  //-1
+// let res = indexOf([1, 2, 3], 4);
+let res = lastIndexOf([1, 2, 3], 1, 5); //0
+console.log(res); //-1
+
+function lastIndexOf(arr, val, index) {
+  const length = arr.length;
+  let end;
+  if (!index || index >= length) {
+    end = length - 1;
+  } else {
+    end = index;
+  }
+  for (let i = end; i >= 0; i--) {
+    if (arr[i] === val) {
+      return i;
+    }
+  }
+  return -1;
+}
