@@ -4,14 +4,14 @@
   @params {Object} 来源对象
 */
 
-function assign(object,...agrs){
-  object={}
-  return agrs.reduce((res,item)=>{
-    for(let key in item){
-      res[key]=item[key]
+function assignIn(object, ...agrs) {
+  object = {};
+  return agrs.reduce((res, item) => {
+    for (let key in item) {
+      res[key] = item[key];
     }
-    return res
-  },object)
+    return res;
+  }, object);
 }
 
 //示例
@@ -25,6 +25,6 @@ function Bar() {
 
 Foo.prototype.b = 2;
 Bar.prototype.d = 4;
-let obj={a:1}
-let res=assign(obj, new Foo, new Bar)
-console.log(res);
+let obj = { a: 1 };
+let res = assignIn(obj, new Foo(), new Bar());
+console.log(res); //{ a: 1, b: 2, c: 3, d: 4 }

@@ -32,4 +32,4 @@ Foo.prototype.b = 2;
 Bar.prototype.d = 4;
 let obj={f:0}
 let res=assign(obj, new Foo, new Bar)
-console.log(res);
+console.log(res); //{ a: 1, c: 3 }
