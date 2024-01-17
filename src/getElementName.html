@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //递归获取子元素
+      function getChildren(element) {
+        //ele.children获取该元素的子元素
+        const children = Array.from(element.children);
+        return children.reduce((res, child) => {
+          res.push({
+            nodeName: child.tagName,
+            children: getChildren(child),
+          })
+          return res
+        }, []);
+      }
+
+      function getElementName(html) {
+        //创建一个DOMParser对象
+        var parser = new DOMParser();
+        //把字符串转解析成HTML字符串
+
+        var htmlCode = parser.parseFromString(html, "text/html");
+        // console.log(htmlCode);
+
+        //根据标签名获取元素节点
+        let allElementName = Array.from(htmlCode.body.getElementsByTagName("*")).splice(0,1);
+        // console.log(allElementName);
+
+        return allElementName.reduce((res,ele)=>{
+          res.push({
+            nodeName:ele.nodeName,
+            children:getChildren(ele)
+          })
+          return res
+        },[])
+      }
+
+      const html =
+        "<div><p>这是一个段落<span>带有子元素</span></p></div>";
+      let res = getElementName(html);
+      console.log(res);
+
+
+      /*
+        parseFromString(str,type)。
+        type:"text/html":用于解析HTML文档
+             "text/xml":用于解析XML文档
+             "text/plain":用于解析纯文本
+             "image/svg+xml":用于解析SVG图像
+      */
+    </script>
+  </body>
+</html>
