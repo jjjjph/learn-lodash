@@ -50,11 +50,11 @@ let arr = [
   { user: "fred", active: false },
   { user: "barney", active: false },
 ];
-let res = findIndex(arr, function (o) {
-  return o.user=='barney';
-});
-// let res = findIndex(arr,{ 'user': 'fred', 'active': false })
-// let res = findIndex(arr,['active', false])
-// let res = findIndex(arr,'active')
+// let res = findIndex(arr, function (o) {
+//   return o.user=='barney';
+// }); //0
+// let res = findIndex(arr,{ 'user': 'fred', 'active': false }) //1
+// let res = findIndex(arr,['active', false]) //1
+let res = findIndex(arr,'active') //0
 
 console.log(res);

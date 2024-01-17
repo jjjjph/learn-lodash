@@ -20,4 +20,4 @@ function dropRight(arr, num) {
 
 //示例
 let res = dropRight([1, 2, 3], 1);
-console.log(res);
+console.log(res); //[1,2]

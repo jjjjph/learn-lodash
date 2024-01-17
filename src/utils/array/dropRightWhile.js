@@ -51,8 +51,16 @@ let arr = [
   { user: "fred", active: false },
   { user: "pebbles", active: false },
 ];
-let res = dropRightWhile(arr, function (o) {
-  return !o.active;
-});
+// let res = dropRightWhile(arr, function (o) {
+//   return !o.active;
+// });   //[ { user: 'barney', active: true } ]
+// let res = dropRightWhile(arr, { user: "pebbles", active: false }); //[ { user: 'barney', active: true }, { user: 'fred', active: false } ]
+// let res = dropRightWhile(arr, ['active', false]); //[ { user: 'barney', active: true } ]
+let res = dropRightWhile(arr, 'active');
+//[
+//   { user: 'barney', active: true },
+//   { user: 'fred', active: false },
+//   { user: 'pebbles', active: false }
+// ]
 
 console.log(res);

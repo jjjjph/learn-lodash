@@ -18,4 +18,4 @@ function join(arr,sep){
 
 //示例
 let res=join(['a','b','c'],'*')
-console.log(res);
+console.log(res);  //a*b*c

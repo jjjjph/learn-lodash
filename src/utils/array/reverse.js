@@ -24,4 +24,4 @@ function reverse(arr) {
 //示例
 let array = [1, 2, 3, 4];
 reverse(array);
-console.log(array);
+console.log(array); //[ 4, 3, 2, 1 ]

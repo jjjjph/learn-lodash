@@ -27,4 +27,4 @@ function pullAllBy(arr, val, iteratee) {
 //示例
 let arr = [{ x: 1 }, { x: 2 }, { x: 3 }, { x: 1 }];
 pullAllBy(arr, [{ 'x': 1 }, { 'x': 3 }], "x");
-console.log(arr);
+console.log(arr); //[ { x: 1 }, { x: 2 } ]

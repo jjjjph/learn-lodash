@@ -15,4 +15,4 @@ function flatten(arr){
 
 //示例
 let res=flatten([1,2,[3],[4,[5,6,[9,0]]]])
-console.log(res);
+console.log(res);  //[ 1, 2, 3, 4, [ 5, 6, [ 9, 0 ] ] ]

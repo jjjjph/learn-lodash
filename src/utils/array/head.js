@@ -11,5 +11,5 @@ function head(arr){
 }
 
 //示例
-let res=head([])
-console.log(res);
+let res=head(['a','b','c'])
+console.log(res); //a

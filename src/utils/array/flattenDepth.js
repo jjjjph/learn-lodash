@@ -17,4 +17,4 @@ function flattenDepth(arr, depth) {
 
 //示例
 let res = flattenDepth([1, [2, [3, [4]], 5]], 2);
-console.log(res);
+console.log(res); //[ 1, 2, 3, [ 4 ], 5 ]

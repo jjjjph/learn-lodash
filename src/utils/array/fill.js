@@ -20,4 +20,4 @@ function fill(arr, value, start, end) {
 //示例
 let arr = [1, 2, 3];
 let res = fill([4, 6, 8, 10], '*', 1, 3)
-console.log(res);
+console.log(res); //[ 4, '*', '*', 10 ]

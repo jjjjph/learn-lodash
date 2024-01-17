@@ -16,4 +16,4 @@ function initial(arr){
 
 //示例
 let res=initial([1, 2, 3])
-console.log(res);
+console.log(res); //[ 1, 2 ]

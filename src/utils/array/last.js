@@ -13,4 +13,4 @@ function last(arr){
 
 //示例
 let res=last(['w','d','s'])
-console.log(res);
+console.log(res); //s
