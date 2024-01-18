@@ -20,5 +20,5 @@ function endsWith(str, target, position = "") {
   return start>=0 && str.slice(start,end)===target
 }
 
-let res=endsWith('abc', 'c')
-console.log(res);
+let res=endsWith('abc', 'b',2)
+console.log(res); //true

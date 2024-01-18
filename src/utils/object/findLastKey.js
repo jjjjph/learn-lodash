@@ -45,6 +45,9 @@ let obj = {
   fred: { age: 40, active: false },
   pebbles: { age: 1, active: true },
 };
-let res = findLastKey(obj, { age: 36, active: true });
+let res = findLastKey(obj, { 'age': 1, 'active': true }); //pebbles
+// let res=findLastKey(obj, function(o) { return o.age < 40; }) //pebbles
+// let res=findLastKey(obj, ['active', false]) //fred
+// let res=findLastKey(obj, 'active') //pebbles
 
 console.log(res);

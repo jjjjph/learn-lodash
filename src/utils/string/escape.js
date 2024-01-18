@@ -17,4 +17,4 @@ function escape(str) {
 
 //示例
 let res = escape("< hhh");
-console.log(res);
+console.log(res); //&lt; hhh

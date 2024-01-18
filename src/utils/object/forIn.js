@@ -18,5 +18,5 @@ function Foo() {
 
 Foo.prototype.c = 3;
 let res=forIn(new Foo,function(value, key) {
-  console.log(key);
+  console.log(key); //a b c
 });

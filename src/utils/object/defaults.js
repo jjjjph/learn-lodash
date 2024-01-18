@@ -20,4 +20,4 @@ function defaults(obj, ...sources) {
 
 //示例
 let res = defaults({ a: 1 }, { b: 2 }, { a: 3 },null, { d: 2 });
-console.log(res);
+console.log(res); //{ a: 1, b: 2, d: 2 }

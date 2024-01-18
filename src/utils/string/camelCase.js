@@ -26,4 +26,4 @@ function camelCase(str){
 
 //示例
 let res=camelCase('__hello-word')
-console.log(res);
+console.log(res); //helloWord

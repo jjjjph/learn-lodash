@@ -28,5 +28,5 @@ Circle.prototype = create(Shape.prototype, {
 });
 
 var circle = new Circle();
-console.log(circle instanceof Circle);
-console.log(circle instanceof Array);
+console.log(circle instanceof Circle); //true
+console.log(circle instanceof Array); //false

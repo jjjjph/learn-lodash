@@ -12,5 +12,5 @@ function capitalize(str){
   }
 }
  //示例
- let res=capitalize('Dskfj')
- console.log(res);
+ let res=capitalize('DskfjGFFJI')
+ console.log(res); //Dskfjgffji

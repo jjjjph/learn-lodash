@@ -25,4 +25,4 @@ Foo.prototype.c = function () {
   console.log("j");
 };
 let res = functions(new Foo());
-console.log(res);
+console.log(res); //[ 'a' ]

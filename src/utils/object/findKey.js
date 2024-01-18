@@ -21,16 +21,15 @@ function findKey(obj, predicate) {
       }
     }
   } else if (Array.isArray(predicate)) {
-
     for (const key in result) {
       if (result[key][predicate[0]] === predicate[1]) {
         return key;
       }
     }
   } else if (typeof predicate === "string") {
-    for (const key in result){
-      if(result[key][predicate]){
-        return key
+    for (const key in result) {
+      if (result[key][predicate]) {
+        return key;
       }
     }
   }
@@ -44,6 +43,9 @@ let obj = {
   fred: { age: 40, active: false },
   pebbles: { age: 1, active: true },
 };
-let res = findKey(obj, { 'age': 1, 'active': true });
+// let res = findKey(obj, { 'age': 1, 'active': true }); //pebbles
+// let res=findKey(obj, function(o) { return o.age < 40; }) //barney
+// let res=findKey(obj, ['active', false]) //fred
+let res = findKey(obj, "active"); //barney
 
 console.log(res);

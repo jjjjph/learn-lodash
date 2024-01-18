@@ -9,4 +9,4 @@ function lowerFirst(str){
 
 //示例
 let res=lowerFirst('FFFFBar')
-console.log(res);
+console.log(res); //fFFFBar

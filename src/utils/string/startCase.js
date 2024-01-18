@@ -3,7 +3,7 @@
   @params {string} 要改写的字符串
 */
 
-function kebabCase(str) {
+function startCase(str) {
   if (!str) {
     return "";
   }
@@ -31,5 +31,5 @@ function kebabCase(str) {
 //toLowerCase()小写
 
 //示例
-let res = kebabCase("gsddGhhJjg");
-console.log(res);
+let res = startCase("gsddGhhJjg");
+console.log(res); //Gsdd Ghh Jjg

@@ -23,4 +23,4 @@ function pad(str,length,value){
 
 //示例
 let res=pad('abc', 8,'_-')
-console.log(res);
+console.log(res); //_-abc_-_

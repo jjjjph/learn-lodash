@@ -24,4 +24,4 @@ function lowerCase(str){
 
 //示例
 let res=lowerCase('--Foo-Bar--')
-console.log(res);
+console.log(res); //foo bar

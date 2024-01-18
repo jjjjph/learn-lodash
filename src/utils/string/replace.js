@@ -5,10 +5,23 @@
   @params {String} 替换的内容
 */
 
-function replaceStr(str,pattern,replacement){
-  return str.replace(pattern,replacement)
+function replaceStr(str, pattern, replacement) {
+  const length = str.length;
+  const patternLength = pattern.length;
+  let result = "";
+
+  for (let i = 0; i < length; i++) {
+    if (str.slice(i, i + patternLength) === pattern) {
+      result += replacement;
+      i += patternLength - 1;
+    } else {
+      result += str[i];
+    }
+  }
+
+  return result;
 }
 
 //示例
-let res=replaceStr('Hi Fred', 'Fred', 'Barney')
+let res = replaceStr("Hello, world! Hello, world!", "world", "universe");
 console.log(res); //'Hi Barney'

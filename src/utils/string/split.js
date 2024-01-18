@@ -11,4 +11,4 @@ function splitStr(str,separator,limit){
 
 //示例
 let res=splitStr('a-b-c', '-', 2)
-console.log(res);
+console.log(res); //[ 'a', 'b' ]

@@ -11,4 +11,4 @@ function escapeRegExp(str) {
 
 //示例
 let res = escapeRegExp("[lodash](https://lodash.com/)");
-console.log(res);
+console.log(res); //\[lodash\]\(https://lodash\.com/\)

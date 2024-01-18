@@ -25,4 +25,4 @@ function snakeCase(str) {
 
 //示例
 let res = snakeCase("dshHggdJtgHjj");
-console.log(res);
+console.log(res); //dsh_hggd_jtg_hjj

@@ -25,4 +25,4 @@ function defaultsDeep(obj, ...sources) {
 
 //示例
 let res = defaultsDeep({ a: { b: 2 } }, { a: { b: 1, c: 3 } });
-console.log(res);
+console.log(res); //{ a: { b: 1, c: 3 } }

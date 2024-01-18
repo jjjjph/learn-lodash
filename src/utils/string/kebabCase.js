@@ -30,4 +30,4 @@ function kebabCase(str) {
 
 //示例
 let res = kebabCase("--Gdjs-Jhds-tgg");
-console.log(res);
+console.log(res); //gdjs-jhds-tgg

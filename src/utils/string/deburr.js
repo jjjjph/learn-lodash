@@ -11,6 +11,10 @@ function deburr(str) {
   // 使用 String.prototype.normalize 去除组合变音标记
   const cancleUmlaut = (str) =>
     str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+
+
+  console.log(cancleUmlaut("déjà vu"),'kkk');
   let result = str.replace(reg, cancleUmlaut);
   return result;
 }
@@ -21,4 +25,4 @@ function deburr(str) {
 
 //示例
 let res = deburr("déjà vu");
-console.log(res);
+console.log(res); //deja vu

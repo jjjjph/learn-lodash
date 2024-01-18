@@ -22,4 +22,4 @@ function padEnd(str,length,value){
 
 //示例
 let res=padEnd('abc', 6, '_-')
-console.log(res);
+console.log(res); //abc_-_
