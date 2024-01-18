@@ -11,15 +11,6 @@ function getValue(obj, path) {
       return res && res[path];
     }, obj);
   }
-  console.log(
-    key.reduce((res, path) => {
-      console.log(res, "kkk");
-      console.log(res[path], "ddd");
-      console.log(path, "path");
-      console.log(obj, "obj");
-      return res && res[path];
-    }, obj)
-  );
 }
 
 //正则表达式\w:匹配任何单词字符（字母、数字、下划线） \$：匹配$字符
