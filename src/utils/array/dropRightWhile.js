@@ -1,7 +1,8 @@
 /*
   dropRightWhile:创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)
-  @params {Array} 要查询的数组
-  @params {Function} 这个函数会在每一次迭代调用
+  @param {Array} arr 要查询的数组
+  @param {Function} predicate 这个函数会在每一次迭代调用
+  @returns {Array} 返回array剩余切片
 */
 
 /*
@@ -21,15 +22,6 @@ function dropRightWhile(arr, predicate) {
       result.pop();
       start--;
     }
-  } else if (Object.prototype.toString.call(predicate) === "[object Object]") {
-    const keys = Object.keys(predicate);
-    while (
-      start >= 0 &&
-      keys.every((key) => result[start][key] === predicate[key])
-    ) {
-      result.pop();
-      start--;
-    }
   } else if (Array.isArray(predicate)) {
     while (start >= 0 && result[start][predicate[0]] === predicate[1]) {
       result.pop();
@@ -37,6 +29,15 @@ function dropRightWhile(arr, predicate) {
     }
   } else if (typeof predicate === "string") {
     while (start >= 0 && result[start][predicate]) {
+      result.pop();
+      start--;
+    }
+  } else if (typeof predicate === "object") {
+    const keys = Object.keys(predicate);
+    while (
+      start >= 0 &&
+      keys.every((key) => result[start][key] === predicate[key])
+    ) {
       result.pop();
       start--;
     }
@@ -56,7 +57,7 @@ let arr = [
 // });   //[ { user: 'barney', active: true } ]
 // let res = dropRightWhile(arr, { user: "pebbles", active: false }); //[ { user: 'barney', active: true }, { user: 'fred', active: false } ]
 // let res = dropRightWhile(arr, ['active', false]); //[ { user: 'barney', active: true } ]
-let res = dropRightWhile(arr, 'active');
+let res = dropRightWhile(arr, "active");
 //[
 //   { user: 'barney', active: true },
 //   { user: 'fred', active: false },

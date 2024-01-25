@@ -1,19 +1,24 @@
 /*
-  nth:获取数组的第n个元素，如果n为负数，则从右往左找
-  @params {Array} 要查询的数组
-  @params {Number} 要返回元素的索引值
+  nth:接受一个整数值并返回该索引对应的值，允许正数和负数
+  @param {Array} arr 要查询的数组
+  @param {Number} index 要查询的索引
+  @returns {*} 返回对应索引的值
 */
 
-function nth(arr,n){
-  const length=arr.length
-  if(n<0){
-    return arr[length+n]
-  }else{
-    return arr[n]
+function nth(arr, index) {
+  const length = arr.length;
+  if (!length) {
+    return [];
   }
+  // if (index < 0) {
+  //   return arr[length + index];
+  // } else {
+  //   return arr[index];
+  // }
+  return arr.at(index)
 }
 
 //示例
-let array=['a', 'b', 'c', 'd']
-let res=nth(array, -3)
-console.log(res); //b
+let arr = [1, 2, 3, 4, 5];
+let res = nth(arr, -3);
+console.log(res); //3

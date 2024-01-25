@@ -1,6 +1,7 @@
 /*
   initial:去除数组的最后的一个元素
-  @params {Array} 要查询的数组
+  @param {Array} arr 要查询的数组
+  @returns {Array} 返回截取后的数组arr
 */
 
 function initial(arr){

@@ -1,8 +1,8 @@
 /*
   differenceBy: 类似difference，区别在于接受一个itera
-  @params {Array} array 要检查的数组
-  @params {Array} ...args排除的值
-  @params {Array|Function|Object|string} args最后一个 iteratee 调用每个元素
+  @param {Array} array 要检查的数组
+  @param {Array} ...args排除的值
+  @param {Array|Function|Object|string} args最后一个 iteratee 调用每个元素
   @returns {Array} 返回一个过滤后的数组
 */
 

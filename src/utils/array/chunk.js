@@ -1,7 +1,7 @@
 /*
   chunk:把数组拆分成指定长度的区块，并将这些区块组成一个新的数组，如果不能等分，则剩余的元素组成一个区块
-  @params {Array} array 需要拆分的数组
-  @params {Number} size 需要拆分的长度
+  @param {Array} array 需要拆分的数组
+  @param {Number} size 需要拆分的长度
   @returns {Array} 返回一个包含拆分区块的新数组
 */
 

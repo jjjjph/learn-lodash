@@ -1,7 +1,7 @@
 /*
   concat: 将array与任何数组或值连接起来，返回一个新数组
-  @params {Array} array 被连接的数组
-  @params {*} ...args 连接的值
+  @param {Array} array 被连接的数组
+  @param {*} ...args 连接的值
   @returns {Array} 返回连接后的新数组
 */
 

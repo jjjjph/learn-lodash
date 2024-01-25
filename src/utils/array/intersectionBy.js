@@ -1,12 +1,13 @@
 /*
   intersectionBy:类似intersection，区别在于他接受一个iteratee
-  @params {...Array} 待检查的数组
+  @param {...Array} ...args 待检查的数组
+  @returns {Array} 返回一个包含所有传入数组交集元素的新数组
 */
 
 function intersectionBy(...args) {
   let length = args.length;
-  let firstArr = args[0];
-  let arr = args.slice(1, length - 1).flat();
+  const [firstArr,...res]=args
+  let arr=res.flat()
   let keyit = args[length - 1];
   let iteratee;
   if (!length) {

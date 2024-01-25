@@ -1,6 +1,7 @@
 /*
   flattenDeep:展开成一维数组的数组
-  @params {Array} 需要展开成一维数组的数组
+  @param {Array} arr 需要展开成一维数组的数组
+  @returns {Array} 返回一个新的一维数组
 */
 
 function flattenDeep(arr) {

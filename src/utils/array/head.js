@@ -1,6 +1,7 @@
 /*
   head:获取数组 array 的第一个元素
-  @params {Array} 要查询的数组
+  @param {Array} arr 要查询的数组
+  @returns {*} 返回数组的第一个元素
 */
 
 function head(arr){

@@ -1,7 +1,7 @@
 /*
   dropRight:创建一个切片数组，去除array尾部的n个元素。（n默认值为1。）
-  @params {Array} arr 要切片的数组
-  @params {Number} num=1 要取出的元素个数
+  @param {Array} arr 要切片的数组
+  @param {Number} num=1 要取出的元素个数
   @returns {Array} 返回array剩余切片
 */
 

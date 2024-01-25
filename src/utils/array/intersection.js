@@ -1,16 +1,17 @@
 /*
   intersection:创建唯一值的数组,可以理解为给定数组的交集
-  @params {...Array} 待检查的数组
+  @param {...Array} ...args 待检查的数组
+  @returns {Array} 返回一个包含所有传入数组交集元素的新数组
 */
 
 function intersection(...args){
- const arr=[...args]
- const length=arr.length
+ const [first,...res]=args
+ const length=args.length
  if(!length){
   return
  }
- return arr[0].filter(item=>{
-    return arr.slice(1).every(it=>it.includes(item))
+ return first.filter(item=>{
+    return res.every(it=>it.includes(item))
  })
 }
 

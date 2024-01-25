@@ -1,7 +1,7 @@
 /*
   compact:返回原数组中所有非假值元素组成的新数组。
-  @params {Array} array 需要处理的数组
-  @returns {Array} 返回过滤掉假值的新数组
+  @param {Array} array 需要处理的数组
+  @return {Array} 返回过滤掉假值的新数组
 */
 
 function compact(array) {

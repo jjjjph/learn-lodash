@@ -1,8 +1,9 @@
 /*
   indexOf:返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配
-  @params {Array} 需要检索的数组
-  @params {*} 需要查找的值
-  @params {Number} 开始查找的位置
+  @param {Array} arr 需要检索的数组
+  @param {*} value 需要查找的值
+  @param {Number} index 开始查找的位置
+  @returns {Number} 返回值value在数组中的索引位置，没有找到就返回-1
 */
 
 //lastIndexOf:从右往左开始找
