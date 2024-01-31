@@ -1,6 +1,7 @@
 /*
   reverse: 反转array,改变原数组
-  @params {Array} 要反转的数组
+  @param {Array} 要反转的数组
+  @returns {Arrayy} 返回反转后的数组
 */
 
 function reverse(arr) {
@@ -9,16 +10,18 @@ function reverse(arr) {
     return;
   }
 
-  let left = 0;
-  let right = length - 1;
+  // let left = 0;
+  // let right = length - 1;
 
-  while (left < right) {
-    const tempt = arr[left];
-    arr[left] = arr[right];
-    arr[right] = tempt;
-    left++;
-    right--;
-  }
+  // while (left < right) {
+  //   const tempt = arr[left];
+  //   arr[left] = arr[right];
+  //   arr[right] = tempt;
+  //   left++;
+  //   right--;
+  // }
+
+  arr.reverse()
 }
 
 //示例

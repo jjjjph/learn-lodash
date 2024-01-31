@@ -1,7 +1,8 @@
 /*
-  pull:移除数组array中所有和给定值相等的元素 ,改变原数组
-  @params {Array} 要修改的数组
-  @params {...*} 要删除的值
+  pull:移除数组array中所有和给定值相等（全等）的元素 ,改变原数组
+  @param {Array} 要修改的数组
+  @param {...*} 要删除的值
+  @returns {Array} 返回改变后的数组
 */
 
 //pullAll:类似pull,区别在于第二个参数为数组
@@ -22,6 +23,6 @@ function pull(arr, ...args) {
 }
 
 //示例
-let arr = [1, 2, 3, 1, 2, 3];
-pull(arr, 2, 3);
+let arr = [1, 2, 3, 1, 2, 3, { a: "namw" }, [1, 2]];
+pull(arr, 2, 3, { a: "namw" }, [1, 2]);
 console.log(arr); //[1,1]
