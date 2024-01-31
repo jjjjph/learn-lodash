@@ -1,7 +1,8 @@
 /*
   assignIn：跟assign类似，但它会便利并继承来源对象的属性
-  @params {Object} 目标对象
-  @params {Object} 来源对象
+  @param {Object} object 目标对象
+  @param {Object} args 来源对象
+  @returns {Object} 返回object
 */
 
 function assignIn(object, ...agrs) {

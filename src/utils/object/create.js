@@ -1,7 +1,7 @@
 /*
   create:创建一个继承 prototype 的对象。 如果提供了 prototype，它的可枚举属性会被分配到创建的对象上。
-  @params {Object} 要继承的对象
-  @params {Object} 待分配的属性
+  @param {Object} prototype 要继承的对象
+  @param {Object} properties 待分配的属性
 */
 
 function create(prototype, properties) {
@@ -21,6 +21,7 @@ function Shape() {
 
 function Circle() {
   Shape.call(this);
+  this.z = 2;
 }
 
 Circle.prototype = create(Shape.prototype, {
@@ -28,5 +29,8 @@ Circle.prototype = create(Shape.prototype, {
 });
 
 var circle = new Circle();
+console.log(circle, "circle");
 console.log(circle instanceof Circle); //true
 console.log(circle instanceof Array); //false
+
+

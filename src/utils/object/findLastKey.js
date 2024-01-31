@@ -1,7 +1,8 @@
 /*
   findLastKey:这个方法类似findKey。 不过它是反方向开始遍历的
-  @parmas {Object} 需要检索的对象
-  @parmas {*} 每次迭代时调用的函数
+  @parma {Object} obj 需要检索的对象
+  @parma {*} predicate 每次迭代时调用的函数
+  @returns {*} 返回匹配的key，否则返回undefined
 */
 
 function findLastKey(obj, predicate) {

@@ -1,7 +1,8 @@
 /*
   defaultsDeep:类似defaults，除了它会递归分配默认属性
-  @params {Object} 目标对象
-  @params {Object} 来源对象
+  @param {Object} obj 目标对象
+  @param {Object} sources 来源对象
+  @returns {Object} 返回obj
 */
 
 function isObject(obj) {

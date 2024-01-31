@@ -1,6 +1,7 @@
 /*
   functions:创建一个函数属性名称的数组，函数属性名称来自object对象自身可枚举属性
-  @params {Object} 要检查的对象
+  @param {Object} obj 要检查的对象
+  @returns {Array} 返回函数名
 */
 
 function functions(obj) {

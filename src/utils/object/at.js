@@ -1,7 +1,8 @@
 /*
   at: 创建一个数组，值来自object的paths路径相对应的值
-  @params {Abject} 要迭代的对象
-  @params {String|String[]} 要获取对象的元素路径，单独制定或者制定在数组中
+  @param {Abject} object 要迭代的对象
+  @param {String|String[]} args 要获取对象的元素路径，单独制定或者制定在数组中
+  @returns {Array} 返回选中值的数组
 */
 
 function getValue(obj, path) {
