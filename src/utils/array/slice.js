@@ -1,8 +1,8 @@
 /*
   slice: 裁剪数组array，从 start 位置开始到end结束，但不包括 end 本身的位置
-  @param {Array} 要裁剪的数组
-  @param {Number} 开始的位置
-  @param {Number} 结束的位置
+  @param {Array} arr 要裁剪的数组
+  @param {Number} start 开始的位置
+  @param {Number} end 结束的位置
   @returns {Array} 返回数组裁剪部分的新数组
 */
 

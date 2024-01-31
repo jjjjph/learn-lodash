@@ -1,7 +1,7 @@
 /*
   pullAt:根据索引 indexes，移除array中对应的元素，并返回被移除元素的数组
-  @param {Array} 要修改的数组
-  @param {...Number} 要移除的索引
+  @param {Array} arr 要修改的数组
+  @param {...Number} args 要移除的索引
   @returns {Array} 返回移除元素组成的新数组
 */
 

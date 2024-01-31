@@ -1,7 +1,8 @@
 /*
   pullAllBy:类似pullAll，区别是这个方法接受一个 iteratee（迭代函数） 调用 array 和 values的每个值以产生一个值，通过产生的值进行了比较.改变原数组
-  @param {Array} 要修改的数组
-  @param {...*} 要删除的值
+  @param {Array} arr 要修改的数组
+  @param {Array} 要移除的数组
+  @param {*} iteratee 迭代器调用每个元素
   @returns {Array} 改变后的数组
 */
 

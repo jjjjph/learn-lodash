@@ -1,7 +1,7 @@
 /*
   remove:移除数组中predicate（断言）返回为真值的所有元素，并返回移除元素组成的数组。predicate（断言） 会传入3个参数： (value, index, array)
-  @param {Array} 要的数组
-  @param {Function} 这个函数会在每一次迭代调用
+  @param {Array} arr 要修改的数组
+  @param {Function} predicate 这个函数会在每一次迭代调用
   @returns {Array} 改变后的数组
 */
 

@@ -1,6 +1,6 @@
 /*
   reverse: 反转array,改变原数组
-  @param {Array} 要反转的数组
+  @param {Array} arr 要反转的数组
   @returns {Arrayy} 返回反转后的数组
 */
 

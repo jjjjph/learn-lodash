@@ -1,7 +1,7 @@
 /*
   pull:移除数组array中所有和给定值相等（全等）的元素 ,改变原数组
-  @param {Array} 要修改的数组
-  @param {...*} 要删除的值
+  @param {Array} arr 要修改的数组
+  @param {...*} args 要删除的值
   @returns {Array} 返回改变后的数组
 */
 
