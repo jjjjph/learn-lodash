@@ -1,11 +1,11 @@
 /*
   endsWith: 检查字符串string是否以给定的target字符串结尾，返回true/false
-  @params {String} 被检查的字符串
-  @params {String} 要检索的字符串
-  @params {Number} 检索的位置
+  @param {String} str 被检查的字符串
+  @param {String} target 要检索的字符串
+  @param {Number} position 检索的位置
 */
 
-function endsWith(str, target, position = "") {
+function endsWith(str, target, position = str.length) {
   if (!str) {
     return "";
   }
@@ -20,5 +20,5 @@ function endsWith(str, target, position = "") {
   return start>=0 && str.slice(start,end)===target
 }
 
-let res=endsWith('abc', 'b',2)
+let res=endsWith('abc', 'c')
 console.log(res); //true

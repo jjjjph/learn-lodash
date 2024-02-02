@@ -1,6 +1,7 @@
 /*
   snakeCase:将字符串转换成snakeCase，即用下划线将单词连接
-  @params {String} 要转换的字符串
+  @param {String} str 要转换的字符串
+  @return {string} 返回转换后的字符串
 */
 
 function snakeCase(str) {

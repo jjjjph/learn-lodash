@@ -1,6 +1,7 @@
 /*
   escapeRegExp:转义 RegExp 字符串中特殊的字符 "^", "$", "", ".", "*", "+", "?", "(", ")", "[", "]", ", ", 和 "|"
-  @params {String} 转义的字符串
+  @params {String} str 转义的字符串
+  @returns {string} 返回转义后的字符串
 */
 
 

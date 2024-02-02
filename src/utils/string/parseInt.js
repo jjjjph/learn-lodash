@@ -1,7 +1,8 @@
 /*
   parseInt:转换string字符串为指定基数的整数。 如果基数是 undefined 或者 0，则radix基数默认是10，如果string字符串是16进制，则radix基数为 16
-  @params {String} 要转换的字符
-  @params {Number} 基数
+  @param {String} str 要转换的字符
+  @param {Number} radix 基数
+  @returns {Number} 返回转换后的整数
 */
 
 function parseIntStr(str, radix) {

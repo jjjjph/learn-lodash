@@ -1,13 +1,14 @@
 /*
   startCase: 转换字符串string为startCase.即首字母大写，用空格隔开
-  @params {string} 要改写的字符串
+  @param {string} str 要改写的字符串
+  @returns {string} 返回转换后的字符串
 */
 
 function startCase(str) {
   if (!str) {
     return "";
   }
-  const reg=/[-_]+/
+  const reg = /[-_]+/;
   let newstr;
   if (reg.test(str)) {
     newstr = str.replace(/[A-Z]/, (chart) => `-${chart.toLowerCase()}`);
