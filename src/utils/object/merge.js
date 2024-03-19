@@ -45,7 +45,7 @@ const other = {
 };
 
 const obj3 = {
-  b: 'vyg',
+  b: "vyg",
 };
 
-console.log(merge(object, other, obj3));
+console.log(merge(object, other, obj3)); //{ a: [ { b: 2, c: 3 }, { d: 4, e: 5 }, { s: 1 } ], b: 'vyg' }
